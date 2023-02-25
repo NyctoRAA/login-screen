@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px orange,
+    0 0 25px orange;
+    border: none;
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    border-radius: 8px;
+}
+
+button:hover {
+    box-shadow: 0 0 5px orange,
+    0 0 25px orange, 0 0 50px orange,
+    0 0 100px orange, 0 0 200px orange;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

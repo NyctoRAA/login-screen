@@ -1,1 +1,146 @@
 @charset 'UTF-8';
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: orange;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.submit {
+    border: 1px solid orange;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    margin: auto;
+    color: orange;
+    font-size: 1.9em;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.submit:hover {
+    border: none;
+    box-shadow: 2px 2px 5px rgba(167, 121, 36, 0.808);
+    background-color: black;
+    color: orange;
+    transform: translate(2%, 2%);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+.form h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+
+.form {
+    position: absolute;
+    content: '';
+    background-color: rgb(10, 10, 10);
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: orange;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    background: rgb(10, 10, 10);
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    background-image: conic-gradient(transparent, transparent, transparent, orange);
+    animation: rotate_border 6s linear infinite;
+}
+
+.container::after {
+    position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background-image: conic-gradient(transparent, transparent, transparent, black);
+      animation: rotate_border 6s linear infinite;
+      animation-delay: -3s;
+}
+
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.email, .password {
+    color: orange;
+    padding: 12px;
+    border-bottom: 1px solid orange;
+}
+
+input {
+    color: orange;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 30px;
+    font-size: 1em;
+    padding: 10px;
+}
+
+#pass, #emai {
+    padding: 15px;
+}
+
+input::placeholder {
+    color: rgba(255, 166, 0, 0.548);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    margin-top: 55px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(255, 166, 0, 0.582);
+}
