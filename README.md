@@ -1,2 +1,2 @@
 # login-screen
- Simple Login Screen Template
+ Simple Responsive Login Screen Template
